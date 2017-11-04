@@ -1,1 +1,23 @@
-/* This file is for your main application css. */
+/*
+**  Standard classes
+*/
+
+body {
+
+}
+
+/*
+**  Flex classes
+*/
+
+.flex-row,
+.flex-col { display: flex; }
+
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+
+.flex-row.center-v,
+.flex-col.center-h { align-items: center; }
+
+.flex-row.center-h,
+.flex-col.center-v { justify-content: center; }
