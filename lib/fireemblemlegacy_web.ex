@@ -40,6 +40,9 @@ defmodule FireemblemlegacyWeb do
       import FireemblemlegacyWeb.Router.Helpers
       import FireemblemlegacyWeb.ErrorHelpers
       import FireemblemlegacyWeb.Gettext
+
+      # Aliases
+      alias Fireemblemlegacy.CommonView
     end
   end
 

@@ -1,0 +1,7 @@
+<header class="flex-row center-v center-h">
+  <h1 class="flex-col center-v center-h">
+    <span>Fire Emblem</span>
+    <hr/>
+    <span>Legacy</span>
+  </h1>
+</header>

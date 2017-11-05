@@ -12,7 +12,15 @@
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
   <!-- BODY -->
-  <body>
+  <body class="flex-col">
+    <!-- Sidebar -->
+    <%= render CommonView, "sidebar.html", assigns %>
+    <!-- Header -->
+    <%= render CommonView, "header.html", assigns %>
+    <!-- Main -->
+    <%= render @view_module, @view_template, assigns %>
+    <!-- Footer -->
+    <%= render CommonView, "footer.html", assigns %>
     <!-- Scripts -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>

@@ -1,0 +1,12 @@
+/*
+**  Fonts imports
+*/
+
+@font-face {
+  font-family: "ChiaroSTDB";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url("/fonts/chiarostdb/ChiaroSTDB.ttf") format("truetype"),
+    url("/fonts/chiarostdb/ChiaroSTDB.woff") format("woff");
+}

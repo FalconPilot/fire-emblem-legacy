@@ -1,21 +1,27 @@
-// Brunch automatically concatenates all files in your
-// watched paths. Those paths can be configured at
-// config.paths.watched in "brunch-config.js".
-//
-// However, those files will only be executed if
-// explicitly imported. The only exception are files
-// in vendor, which are never wrapped in imports and
-// therefore are always executed.
-
-// Import dependencies
-//
-// If you no longer want to use a dependency, remember
-// to also remove its path from "config.paths.watched".
 import "phoenix_html"
+import { exists, getId } from "./helpers"
 
-// Import local files
-//
-// Local files can be imported directly using relative
-// paths "./socket" or full ones "web/static/js/socket".
+// Launch initalizations after DOM is loaded
+window.addEventListener("DOMContentLoaded", () => {
 
-// import socket from "./socket"
+  // Common initializations
+  initSidebar()
+})
+
+// Initialize sidebar and burger menu
+let initSidebar = () => {
+  getId("sidebar-button").addEventListener("click", switchMenu)
+}
+
+// Switch sidebar status
+let switchMenu = (event) => {
+
+  // Fetch button
+  const btn = event.target.tagName === "IMG"
+    ? event.target.parentNode
+    : event.target
+
+  // Toggle sidebar class
+  const sidebar = getId("sidebar")
+  sidebar.classList.toggle("opened")
+}

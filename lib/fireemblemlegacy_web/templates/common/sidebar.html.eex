@@ -1,0 +1,8 @@
+<div class="flex-col" id="sidebar">
+  <!-- Sidebar -->
+  <div class="sidebar-content padding-v padding-h">
+  </div>
+
+  <!-- Sidebar button -->
+  <button id="sidebar-button">Menu</button>
+</div>

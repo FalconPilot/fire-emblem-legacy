@@ -13,6 +13,7 @@ defmodule FireemblemlegacyWeb.Router do
     plug :accepts, ["json"]
   end
 
+  # Common scope
   scope "/", FireemblemlegacyWeb do
     pipe_through :browser # Use the default browser stack
 
